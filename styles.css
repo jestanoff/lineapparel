@@ -3,19 +3,15 @@
 body {
   margin: 0;
   font-family: 'Tahoma', sans-serif;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Zilla Slab', serif;
 }
 
-h2 {
-  font-size: 4rem;
-}
-
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 p {
@@ -24,8 +20,9 @@ p {
 
 .logo {
   position: fixed;
-  margin: 20px 0 0 20px;
+  margin: 10px 0 0 10px;
   z-index: 2;
+  width: 65px;
 }
 
 .here-banner-image {
@@ -40,14 +37,15 @@ p {
 }
 
 .hero-slogan {
+  font-size: 2.6rem;
   color: #ffffff;
   left: 50%;
-  line-height: 1;
+  line-height: 1.2;
   position: absolute;
   text-align: center;
   top: 42%;
   transform: translate(-50%, -50%);
-  width: 70vw;
+  width: 80vw;
   z-index: 1;
 }
 
@@ -105,11 +103,11 @@ p {
 }
 
 main > section {
-  padding: 20px 60px 60px 140px;
+  padding: 20px 40px 60px;
 }
 
 main p {
-  padding: 0 10vw;
+  padding: 0;
 }
 
 .services {
@@ -137,5 +135,39 @@ main p {
 }
 
 footer {
-  padding: 20px 60px 40px 140px;
+  padding: 40px;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    margin: 20px 0 0 20px;
+    width: 100px;
+  }
+
+  body {
+    font-size: 1.1rem;
+  }
+
+  .hero-slogan {
+    font-size: 4rem;
+    line-height: 1;
+    top: 42%;
+    width: 70vw;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+
+  main > section {
+    padding: 20px 60px 60px 140px;
+  }
+  
+  main p {
+    padding: 0 10vw;
+  }
+
+  footer {
+    padding: 20px 60px 40px 140px;
+  }
 }

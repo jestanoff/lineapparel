@@ -2,7 +2,7 @@
 <svg width="100" height="100" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
   <path d="M0 0h800v800H0z" fill="#660080"/>
   <g transform="scale(1.3, 1.3) translate(-130, 60)">
-    <text x="321.985" y="210.957" fill="#fff" font-family="Tahoma" font-size="88" font-weight="700">
+    <text x="321.985" y="210.957" fill="#fff" font-family="Tahoma, sans-serif" font-size="88" font-weight="700">
       <tspan>Line</tspan>
       <tspan x="321.985" y="298.957">Apparel</tspan>
     </text>
