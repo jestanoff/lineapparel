@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Zilla Slab', serif;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  line-height: 2;
+}
+
+.logo {
+  position: fixed;
+  margin: 20px 0 0 20px;
+  z-index: 2;
+}
+
+.here-banner-image {
+  height: 100%;
+  object-fit: cover;
+  width: 100vw;
+}
+
+.hero-banner {
+  height: 60vh;
+  position: relative;
+}
+
+.hero-slogan {
+  color: #ffffff;
+  left: 50%;
+  line-height: 1;
+  position: absolute;
+  text-align: center;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  z-index: 1;
+}
+
+.triangle-container > * {
+  background-repeat: no-repeat;
+  background: radial-gradient(circle farthest-side, hsla(0, 0%, 100%, 0), rgba(0, 0, 0, 0.275));
+  bottom: -68rem;
+  bottom: 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.triangle-one {
+  clip-path: polygon(50% 0, -24vw 112vh, 124vw 112vh);
+  display: block;
+}
+
+.triangle-two {
+  clip-path: polygon(50% 0, -48vw 112%, 148vw 112vh);
+  display: block;
+}
+
+.triangle-three {
+  clip-path: polygon(0 -13vw, -24vw 111vw, 100vw 112vh);
+  display: block;
+  width: 100%;
+}
+
+.banner-triangle__holder {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.banner-triangle__left {
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+  border-width: 20rem 0 0 51vw;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.banner-triangle__right {
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+  border-width: 20rem 51vw 0 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+
+main > section {
+  padding: 20px 60px 60px 140px;
+}
+
+main p {
+  padding: 0 10vw;
+}
+
+.services {
+  background-color: #9048a2;
+}
+
+.services h3 {
+  color: #c5a1ce;
+}
+
+.services p {
+  color: #fff;
+}
+
+.sustainability {
+  background-color: #005c54;
+}
+
+.sustainability p {
+  color: #fff;
+}
+
+.sustainability h3 {
+  color: #53a9a1;
+}
+
+footer {
+  padding: 20px 60px 40px 140px;
+}
