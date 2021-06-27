@@ -1,3 +1,4 @@
+const sitekey = '6LeLS10bAAAAAEE5oAINI-cSo9STuJrvDSLQY-o2';
 const timeElm = document.querySelector('#copy-year');
 const year = new Date().getUTCFullYear();
 timeElm.textContent = year;
@@ -35,18 +36,23 @@ contactForm.addEventListener('submit', (event) => {
   };
 
   grecaptcha.ready(function () {
-    grecaptcha.execute('6LeLS10bAAAAAEE5oAINI-cSo9STuJrvDSLQY-o2', { action: 'submit' }).then((token) => {
+    grecaptcha.execute(sitekey, { action: 'submit' }).then((token) => {
       if (!token) return;
 
-      try {
-        console.log(token);
-        console.log(grecaptcha.getResponse());
-      } catch (error) {
-        console.error(error);
-      }
-
-      contactForm.innerHTML = '<p>Thank you! We are doing our best to reply as soon as possible to your message.</p>';
+      document.querySelector('.contact-us-form').innerHTML = `
+      <legend>Contact us</legend>
+      <div class="success-message" role="alert">
+        <p><strong>Thank you!</strong></p>
+        <p>We are doing our best to reply as soon as possible to your message.</p>
+      </div>`;
       emailjs.send('default_service', 'template_tyu9wv7', values, str.split('!#s').reverse().join(''));
     });
   });
+
+  grecaptcha.render('recaptcha', {
+    sitekey,
+    'callback': response => {
+      console.log(response);
+    },
+});
 });
