@@ -172,8 +172,9 @@ main p {
 button[type="submit"] {
   background-color: #806290;
   border: none;
-  font-size: 0.9rem;
   color: #ffffff;
+  cursor: pointer;
+  font-size: 0.9rem;
   height: 44px;
 }
 
@@ -246,6 +247,10 @@ footer {
   }
 
   .what-we-do p {
+    padding: 0;
+  }
+
+  .contact p {
     padding: 0;
   }
 
