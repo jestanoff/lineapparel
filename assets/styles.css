@@ -136,7 +136,7 @@ main p {
 
 .contact-us-form {
   border: none;
-  padding: 0 50px;
+  padding: 0;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -176,6 +176,10 @@ button[type="submit"] {
   cursor: pointer;
   font-size: 0.9rem;
   height: 44px;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
 }
 
 footer {
@@ -252,6 +256,10 @@ footer {
 
   .contact p {
     padding: 0;
+  }
+
+  .contact-us-form {
+    padding: 0 50px;
   }
 
   footer {
