@@ -37,10 +37,16 @@ contactForm.addEventListener('submit', (event) => {
   grecaptcha.ready(function () {
     grecaptcha.execute('6LeLS10bAAAAAEE5oAINI-cSo9STuJrvDSLQY-o2', { action: 'submit' }).then((token) => {
       if (!token) return;
-      console.log(grecaptcha.getResponse())
 
-      // contactForm.innerHTML = '<p>Thank you! We are doing our best to reply as soon as possible to your message.</p>';
-      // emailjs.send('default_service', 'template_tyu9wv7', values, str.split('!#s').reverse().join(''));
+      try {
+        console.log(token);
+        console.log(grecaptcha.getResponse());
+      } catch (error) {
+        console.error(error);
+      }
+
+      contactForm.innerHTML = '<p>Thank you! We are doing our best to reply as soon as possible to your message.</p>';
+      emailjs.send('default_service', 'template_tyu9wv7', values, str.split('!#s').reverse().join(''));
     });
   });
 });
